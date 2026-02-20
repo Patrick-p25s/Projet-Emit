@@ -1,12 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EMIT Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="personnallePage/patrick.css">
 </head>
-<body>
-    <h1>Contenus de la page d'acceuil</h1>
-    
+<body data-theme="light">
+    <header class="hero" id="top">
+        <div class="container hero-content">
+            <div class="hero-layout">
+                <div class="hero-text">
+                    <p class="eyebrow">Bonjour, nous sommes</p>
+                    <div class="hero-title-box">
+                        <h1 id="we-are">GROUPE B METU</h1>
+                    </div>
+                    <p class="lead">
+                        Nous sommes un groupe de 10 etudiants EMIT, motives pour creer des projets web modernes.
+                    </p>
+                    <p class="hero-summary">
+                        Bienvenue dans notre projet HTML, CSS et JavaScript.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#projects">Decouvrir</a>
+                        <a class="btn btn-secondary" href="#contact">Contact</a>
+                    </div>
+                </div>
+
+                <aside class="hero-side">
+                    <div class="hero-card">
+                        <div class="hero-card-inner">
+                            <div class="hero-carousel" id="hero-carousel">
+                                <button class="carousel-nav prev" id="carousel-prev" type="button" aria-label="Image precedente">&#10094;</button>
+                                <div class="carousel-track" id="carousel-track">
+                                    <article class="carousel-slide is-active">
+                                        <img class="carousel-image click-fullscreen" src="images/fond15.jpg" alt="Photo du groupe EMIT">
+                                        <p class="carousel-caption">EMIT Team 2025</p>
+                                    </article>
+                                    <article class="carousel-slide">
+                                        <img class="carousel-image click-fullscreen" src="images/fond14.jpg" alt="Photo etudiants EMIT">
+                                        <p class="carousel-caption">Collaborer, creer, evoluer</p>
+                                    </article>
+                                    <article class="carousel-slide">
+                                        <img class="carousel-image click-fullscreen" src="images/fond16.jpg" alt="Projet web du groupe">
+                                        <p class="carousel-caption">Notre image en train de developper</p>
+                                    </article>
+                                    <article class="carousel-slide">
+                                        <img class="carousel-image click-fullscreen" src="images/fond18.jpg" alt="Projet web du groupe">
+                                        <p class="carousel-caption">Notre Leader</p>
+                                    </article>
+                                    <article class="carousel-slide">
+                                        <img class="carousel-image click-fullscreen" src="images/fond19.jpg" alt="Projet web du groupe">
+                                        <p class="carousel-caption">Les Jeunes ambitieux du Promotion</p>
+                                    </article>
+                                    <article class="carousel-slide">
+                                        <img class="carousel-image click-fullscreen" src="images/fond20.jpg" alt="Projet web du groupe">
+                                        <p class="carousel-caption">On est genial </p>
+                                    </article>
+                                    <article class="carousel-slide">
+                                        <img class="carousel-image click-fullscreen" src="images/fond21.jpg" alt="Projet web du groupe">
+                                        <p class="carousel-caption">Merci les jeunes</p>
+                                    </article>
+                                    <article class="carousel-slide">
+                                        <img class="carousel-image click-fullscreen" src="images/fond2.png" alt="Projet web du groupe">
+                                        <p class="carousel-caption">Les grandes animations</p>
+                                    </article>
+                                </div>
+                                <button class="carousel-nav next" id="carousel-next" type="button" aria-label="Image suivante">&#10095;</button>
+                                <div class="carousel-dots" id="carousel-dots" aria-label="Choisir une image">
+                                    <button type="button" class="carousel-dot is-active" data-slide="0" aria-label="Slide 1"></button>
+                                    <button type="button" class="carousel-dot" data-slide="1" aria-label="Slide 2"></button>
+                                    <button type="button" class="carousel-dot" data-slide="2" aria-label="Slide 3"></button>
+                                    <button type="button" class="carousel-dot" data-slide="0" aria-label="Slide 1"></button>
+                                    <button type="button" class="carousel-dot" data-slide="1" aria-label="Slide 2"></button>
+                                    <button type="button" class="carousel-dot" data-slide="2" aria-label="Slide 3"></button>
+                                    <button type="button" class="carousel-dot" data-slide="0" aria-label="Slide 1"></button>
+                                    <button type="button" class="carousel-dot" data-slide="1" aria-label="Slide 2"></button>
+                                </div>
+                            </div>
+                            <h3>Notre Galerie</h3>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <div class="scroll-indicator">Scroll</div>
+    </header>
+
+        <div class="header-pages">
+            <nav class="navigation container">
+                <h2 class="logo">EMIT</h2>
+                <ul class="menu-links">
+                    <li><a href="#top" class="link">Accueil</a></li>
+                    <li><a href="#projects" class="link">Decouvrir</a></li>
+                    <li><a href="#contact" class="link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    <section class="section projects" id="projects">
+        <!-- L'entete de la page en utilisation qui fixe après scrol  -->
+        
+
+        <div class="container">
+            <div class="section-head">
+                <p class="section-mini-title">Notre Equipe</p>
+                <h2>Membres du groupe</h2>
+            </div>
+
+            <!-- division pour inserer les cartes des tous les membres du groupe -->
+            <div class="grid" id="members-grid"></div>
+        </div>
+    </section>
+
+    <!-- debut de la partie contact de la page  -->
+    <section class="section contact" id="contact">
+        <div class="container contact-layout">
+            <div class="contact-info-card">
+                <p class="section-mini-title">Contact Page</p>
+                <h2>Parlons de notre projet</h2>
+                <p>
+                    Vous pouvez nous contacter pour une collaboration, une question technique ou une demonstration de notre travail.
+                </p>
+                <div class="contact-lines">
+                    <p><strong>Email:</strong> emit.team@gmail.com</p>
+                    <p><strong>Telephone:</strong> +261 38 00 000 00</p>
+                    <p><strong>Adresse:</strong> Universite EMIT, Madagascar</p>
+                </div>
+            </div>
+
+            <form class="contact-form-card" id="contact-form">
+                <label for="contact-name">Nom complet</label>
+                <input id="contact-name" type="text" placeholder="Votre nom" required>
+
+                <label for="contact-email">Email</label>
+                <input id="contact-email" type="email" placeholder="votre@email.com" required>
+
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" rows="5" placeholder="Ecrivez votre message..." required></textarea>
+
+                <button class="btn btn-primary" type="submit">Envoyer</button>
+                <p id="contact-feedback" class="contact-feedback" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <section class="modal-parts" id="modal-page" aria-hidden="true">
+        <div class="modal-contains">
+            <section class="parts-content" role="dialog" aria-modal="true" aria-labelledby="modal-fullname">
+                <div class="image-part-details modal-animated-item">
+                    <img src="images/fond17.jpg" alt="Photo de profil" class="images-details click-fullscreen" id="modal-image">
+                </div>
+
+                <div class="text-partie">
+                    <section class="modal-item modal-animated-item">
+                        <h5>Nom complet</h5>
+                        <p id="modal-fullname">Nom Prenom</p>
+                    </section>
+                    <section class="modal-item modal-animated-item">
+                        <h5>Age</h5>
+                        <p id="modal-age">18 ans</p>
+                    </section>
+                    <section class="modal-item modal-animated-item">
+                        <h5>Contact</h5>
+                        <p id="modal-phone">000 00 000 00</p>
+                        <p id="modal-email">user@email.com</p>
+                    </section>
+                    <section class="modal-item modal-animated-item">
+                        <h5>Compte GitHub</h5>
+                        <a href="#" id="modal-github" target="_blank" rel="noopener noreferrer">https://github.com</a>
+                    </section>
+                    <section class="modal-item modal-animated-item">
+                        <h5>Langages</h5>
+                        <p id="modal-stack">HTML, CSS, Javascript</p>
+                    </section>
+                    <section class="modal-item modal-animated-item">
+                        <h5>Description</h5>
+                        <p id="modal-description">Description du membre.</p>
+                    </section>
+                </div>
+
+                <button id="closeModal" class="modal-close-btn" type="button">Fermer</button>
+            </section>
+        </div>
+    </section>
+
+    <section class="image-viewer" id="image-viewer" aria-hidden="true">
+        <button class="image-viewer-close" id="image-viewer-close" type="button" aria-label="Fermer l'image">&times;</button>
+        <img id="image-viewer-img" src="" alt="Preview image fullscreen">
+    </section>
+
+    <footer class="site-footer" id="footer">
+        <div class="container footer-layout">
+            <div class="footer-brand">
+                <h3>EMIT Project</h3>
+                <p>Equipe de developpement web - HTML, CSS et JavaScript.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#top">Accueil</a>
+                <a href="#projects">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <p>emit.team@gmail.com</p>
+                <p>+261 38 00 000 00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 EMIT Team. Tous droits reserves.</p>
+        </div>
+    </footer>
+
+    <div class="theme-toggle-card">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode">
+            <svg class="theme-icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="5" fill="currentColor"></circle>
+                <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="12" y1="1" x2="12" y2="4"></line>
+                    <line x1="12" y1="20" x2="12" y2="23"></line>
+                    <line x1="1" y1="12" x2="4" y2="12"></line>
+                    <line x1="20" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.2" y1="4.2" x2="6.4" y2="6.4"></line>
+                    <line x1="17.6" y1="17.6" x2="19.8" y2="19.8"></line>
+                    <line x1="17.6" y1="6.4" x2="19.8" y2="4.2"></line>
+                    <line x1="4.2" y1="19.8" x2="6.4" y2="17.6"></line>
+                </g>
+            </svg>
+            <svg class="theme-icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 15.5a8.5 8.5 0 1 1-7.5-11 7 7 0 1 0 7.5 11z" fill="currentColor"></path>
+            </svg>
+        </button>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
