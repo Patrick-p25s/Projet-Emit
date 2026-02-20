@@ -1,0 +1,1 @@
+// javascript de la page d'acceuil 
