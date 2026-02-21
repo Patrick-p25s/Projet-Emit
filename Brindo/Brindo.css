@@ -138,10 +138,10 @@ span{
     box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.stack-item:nth-child(1) .thumb { background-image: url(DeFace.png); }
-.stack-item:nth-child(2) .thumb { background-image: url(Guitare.jpeg); }
-.stack-item:nth-child(3) .thumb { background-image: url(XUbuntu.jpg); }
-.stack-item:nth-child(4) .thumb { background-image: url(BigTOTO.jpg); }
+.stack-item:nth-child(1) .thumb { background-image: url(Brindo2.png); }
+.stack-item:nth-child(2) .thumb { background-image: url(Brindo3.jpeg); }
+.stack-item:nth-child(3) .thumb { background-image: url(Brindo7.jpg); }
+.stack-item:nth-child(4) .thumb { background-image: url(Brindo4.jpg); }
 
 
 .gallery-section{
