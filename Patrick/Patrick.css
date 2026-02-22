@@ -1,0 +1,295 @@
+:root {
+    --bg: #f3f8ff;
+    --surface: #ffffff;
+    --text: #162033;
+    --muted: #4f5f7a;
+    --accent: #1f6bff;
+    --accent-soft: #cfe0ff;
+    --border: #dde6f5;
+    --shadow: 0 16px 40px rgba(21, 52, 110, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--text);
+    background: radial-gradient(circle at 12% 10%, #ffffff 0%, var(--bg) 45%, #eef3fb 100%);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    width: min(980px, 92vw);
+    margin: 2.2rem auto;
+}
+
+.cv-card {
+    position: relative;
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 28px;
+    padding: clamp(1.1rem, 1.8vw, 1.8rem);
+    box-shadow: var(--shadow);
+}
+
+.bg-orbs {
+    position: absolute;
+    top: -34px;
+    right: -36px;
+    pointer-events: none;
+}
+
+.bg-orbs span {
+    position: absolute;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--accent) 26%, white);
+}
+
+.bg-orbs span:nth-child(1) {
+    width: 180px;
+    height: 180px;
+    top: 0;
+    right: 0;
+}
+
+.bg-orbs span:nth-child(2) {
+    width: 96px;
+    height: 96px;
+    top: 128px;
+    right: 118px;
+    background: color-mix(in srgb, var(--accent) 44%, white);
+}
+
+.bg-orbs span:nth-child(3) {
+    width: 58px;
+    height: 58px;
+    top: 112px;
+    right: 18px;
+    background: color-mix(in srgb, var(--accent) 62%, white);
+}
+
+.header-cv {
+    display: flex;
+    align-items: center;
+    gap: 1.15rem;
+    padding-right: 8rem;
+}
+
+.avatar {
+    width: 128px;
+    height: 128px;
+    border-radius: 22px;
+    object-fit: cover;
+    border: 4px solid color-mix(in srgb, var(--accent) 20%, white);
+    box-shadow: 0 10px 24px color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+.identity h1 {
+    margin: 0;
+    font-size: clamp(1.5rem, 2.4vw, 2rem);
+}
+
+.emplois-title {
+    margin: 0.35rem 0 0;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.option-choisis {
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr auto 1fr;
+    gap: 0.5rem 0.65rem;
+    margin: 1.1rem 0 1.2rem;
+    padding: 0.85rem;
+    background: color-mix(in srgb, var(--accent) 8%, white);
+    border: 1px solid color-mix(in srgb, var(--accent) 20%, white);
+    border-radius: 16px;
+}
+
+.option-choisis label {
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: var(--muted);
+    align-self: center;
+}
+
+.option-choisis select {
+    width: 100%;
+    min-height: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: #fff;
+    color: var(--text);
+    padding: 0.45rem 0.6rem;
+    outline: none;
+}
+
+.option-choisis select:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+article {
+    margin-top: 1rem;
+}
+
+.title {
+    margin: 0 0 0.35rem;
+    color: var(--accent);
+    font-size: 1.05rem;
+}
+
+.profile1 {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.65;
+}
+
+.content-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.content-list li {
+    position: relative;
+    padding-left: 1.45rem;
+    margin-bottom: 0.48rem;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+.signature-block {
+    margin-top: 1.2rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid color-mix(in srgb, var(--accent) 20%, white);
+    text-align: right;
+}
+
+.signature-text {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1;
+    color: color-mix(in srgb, var(--accent) 82%, #000000);
+    font-family: "Great Vibes", cursive;
+}
+
+.signature-name {
+    margin: 0.3rem 0 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.style-1 .content-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.56rem;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+.style-2 .content-list li::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: 0.56rem;
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+    transform: rotate(45deg);
+}
+
+.style-3 .content-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.63rem;
+    width: 12px;
+    height: 2px;
+    background: var(--accent);
+    border-radius: 99px;
+}
+
+.style-1 {
+    font-family: "Outfit", "Segoe UI", sans-serif;
+}
+
+.style-2 {
+    font-family: "Lora", Georgia, serif;
+}
+
+.style-3 {
+    font-family: "DM Sans", "Segoe UI", sans-serif;
+}
+
+.theme-blue {
+    --bg: #eef5ff;
+    --text: #162033;
+    --muted: #4c5f81;
+    --accent: #1f6bff;
+    --border: #d9e6ff;
+    --shadow: 0 16px 40px rgba(35, 95, 214, 0.15);
+}
+
+.theme-red {
+    --bg: #fff1f1;
+    --text: #331919;
+    --muted: #6f4040;
+    --accent: #e03b3b;
+    --border: #ffd4d4;
+    --shadow: 0 16px 40px rgba(181, 39, 39, 0.16);
+}
+
+.theme-green {
+    --bg: #effcf2;
+    --text: #163124;
+    --muted: #496a58;
+    --accent: #2eaf55;
+    --border: #cff2da;
+    --shadow: 0 16px 40px rgba(36, 137, 68, 0.16);
+}
+
+@media (max-width: 740px) {
+    .container {
+        margin: 1rem auto;
+    }
+
+    .cv-card {
+        border-radius: 20px;
+        padding: 1rem;
+    }
+
+    .header-cv {
+        padding-right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .avatar {
+        width: 110px;
+        height: 110px;
+    }
+
+    .option-choisis {
+        grid-template-columns: 1fr;
+    }
+
+    .bg-orbs {
+        top: -54px;
+        right: -44px;
+    }
+
+    .signature-text {
+        font-size: 1.7rem;
+    }
+}
