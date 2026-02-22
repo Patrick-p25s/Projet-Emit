@@ -47,5 +47,4 @@ const options = {
     style: document.getElementById('styles'),
     color: document.getElementById('color'),
 }
-console.log(options);
 
