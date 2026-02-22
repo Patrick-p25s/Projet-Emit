@@ -172,6 +172,8 @@ const groupNames = [
     "LES SOLIDAIRES",
 ];
 
+const THEME_STORAGE_KEY = "emit-theme";
+
 let titleIndex = 0;
 let isModalOpen = false;
 let isViewerOpen = false;
@@ -333,9 +335,24 @@ function initModalControls() {
 function initCarousel() {
     const carouselRoot = document.getElementById("hero-carousel");
     const slides = Array.from(document.querySelectorAll(".carousel-slide"));
-    const dots = Array.from(document.querySelectorAll(".carousel-dot"));
+    const dotsContainer = document.getElementById("carousel-dots");
     const prevBtn = document.getElementById("carousel-prev");
     const nextBtn = document.getElementById("carousel-next");
+    let dots = [];
+
+    if (!carouselRoot || !slides.length || !dotsContainer || !prevBtn || !nextBtn) {
+        return;
+    }
+
+    dotsContainer.innerHTML = slides
+        .map(
+            (_, idx) =>
+                `<button type="button" class="carousel-dot${
+                    idx === 0 ? " is-active" : ""
+                }" data-slide="${idx}" aria-label="Slide ${idx + 1}"></button>`
+        )
+        .join("");
+    dots = Array.from(dotsContainer.querySelectorAll(".carousel-dot"));
 
     let slideIndex = 0;
     let carouselTimer;
@@ -385,14 +402,44 @@ function initCarousel() {
 
 function initThemeToggle() {
     const themeToggle = document.getElementById("theme-toggle");
+    if (!themeToggle) return;
+
+    function setTheme(nextTheme) {
+        document.body.setAttribute("data-theme", nextTheme);
+        try {
+            localStorage.setItem(THEME_STORAGE_KEY, nextTheme);
+        } catch (error) {
+            // Ignore storage errors and keep the in-memory theme switch.
+        }
+        themeToggle.setAttribute(
+            "aria-label",
+            nextTheme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+        );
+    }
+
+    function resolveInitialTheme() {
+        let storedTheme = null;
+        try {
+            storedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+        } catch (error) {
+            storedTheme = null;
+        }
+        if (storedTheme === "light" || storedTheme === "dark") {
+            return storedTheme;
+        }
+
+        if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            return "dark";
+        }
+
+        return "light";
+    }
+
+    setTheme(resolveInitialTheme());
 
     themeToggle.addEventListener("click", () => {
         const isDark = document.body.getAttribute("data-theme") === "dark";
-        document.body.setAttribute("data-theme", isDark ? "light" : "dark");
-        themeToggle.setAttribute(
-            "aria-label",
-            isDark ? "Switch to dark mode" : "Switch to light mode"
-        );
+        setTheme(isDark ? "light" : "dark");
     });
 }
 
