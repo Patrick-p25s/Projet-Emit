@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Nomentsoa Patrick</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Great+Vibes&family=Lora:wght@500;600;700&family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Patrick.css">
+</head>
+<body class="theme-blue style-1">
+    <main class="container">
+        <section class="cv-card" aria-label="CV de Nomentsoa Patrick">
+            <div class="bg-orbs" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <header class="header-cv">
+                <img src="patrick.png" alt="Photo de Nomentsoa Patrick" class="avatar">
+                <div class="identity">
+                    <h1>Nomentsoa Patrick</h1>
+                    <p class="emplois-title" id="jobTitle">Développeur full-stack</p>
+                </div>
+            </header>
+
+            <section class="option-choisis" aria-label="Options de personnalisation">
+                <label for="styles">Style</label>
+                <select name="styles" id="styles">
+                    <option value="style1">Style Moderne</option>
+                    <option value="style2">Style Classique</option>
+                    <option value="style3">Style Créatif</option>
+                </select>
+
+                <label for="jobs">Version CV</label>
+                <select name="jobs" id="jobs">
+                    <option value="dev">Développeur Full-stack</option>
+                    <option value="data">Data Scientist</option>
+                    <option value="student">Étudiant</option>
+                </select>
+
+                <label for="color">Couleur</label>
+                <select name="color" id="color">
+                    <option value="blue">Bleu</option>
+                    <option value="red">Rouge</option>
+                    <option value="green">Vert</option>
+                </select>
+            </section>
+
+            <article>
+                <h4 class="title" id="title1">Profil</h4>
+                <p class="profile1" id="profile"></p>
+            </article>
+
+            <article>
+                <h4 class="title" id="title2">Compétences</h4>
+                <ul id="list1" class="content-list"></ul>
+            </article>
+
+            <article>
+                <h4 class="title" id="title3">Projets</h4>
+                <ul id="list2" class="content-list"></ul>
+            </article>
+
+            <article>
+                <h4 class="title" id="title4">Contact</h4>
+                <ul id="list3" class="content-list"></ul>
+            </article>
+
+            <footer class="signature-block" aria-label="Signature">
+                <p class="signature-text">Signature</p>
+                <p class="signature-name">Nomentsoa Patrick</p>
+            </footer>
+        </section>
+    </main>
+    <script src="Patrick.js"></script>
+</body>
+</html>
