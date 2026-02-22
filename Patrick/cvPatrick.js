@@ -31,3 +31,21 @@ const datas = [
         ]
     }
 ]
+function createElement(tagname, content="", classes=null){
+    let article = document.createElement(tagname);
+    article.innerHTML = content;
+    article.className = classes;
+    return article;
+
+}
+const zah = createElement('p', 'Je suis Nomentsoa Patrick', 'title1')
+const data = Array.from(document.querySelectorAll('article h4'));
+data.push(zah);
+
+const options = {
+    jobs: document.getElementById('jobs'),
+    style: document.getElementById('styles'),
+    color: document.getElementById('color'),
+}
+console.log(options);
+
