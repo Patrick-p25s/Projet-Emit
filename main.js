@@ -48,7 +48,7 @@ const members = [
         email: "brindtoto@gmail.com",
         age: "18",
         langage: "Linux, PHP, Javascript",
-        image: "Brindo/Brindo1.jpg",
+        image: "Brindo/Brindo1.png",
         html: "Brindo/Brindo.html",
     },
     {
@@ -62,7 +62,7 @@ const members = [
         email: "edit-emit@gmail.com",
         age: "19",
         langage: "HTML, CSS, Javascript",
-        image: "Edith/edith.png",
+        image: "Edith/edtih.png",
         html: "Edith/edith.html",
     },
     {
@@ -146,7 +146,7 @@ const members = [
         email: "mamy.emit@gmail.com",
         age: "18",
         langage: "C, PHP, Javascript",
-        image: "Patrick/patrick1.png",
+        image: "Patrick/patrick.png",
         html: "Patrick/Patrick.html",
     },
     {
