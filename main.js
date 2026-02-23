@@ -77,7 +77,7 @@ const members = [
         age: "19",
         langage: "PHP, MySQL, Javascript",
         image: "Patrick/carene.png",
-        html: "Eliacarene/Carene.html",
+        html: "carene/carene.html",
     },
     {
         id: 5,
