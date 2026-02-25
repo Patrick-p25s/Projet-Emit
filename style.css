@@ -1,3 +1,42 @@
+:root {
+    --bg: #f5f8fc;
+    --bg-2: #e9f0fb;
+    --panel: #ffffff;
+    --text: #12243e;
+    --muted: #5d6f89;
+    --line: #d8e3f1;
+    --primary: #0b7f79;
+    --secondary: #2a5bd7;
+    --accent: #e45b2d;
+    --shadow: 0 18px 42px rgba(16, 38, 66, 0.13);
+    --toggle-bg: rgba(255, 255, 255, 0.9);
+    --input-bg: #ffffff;
+    --modal-overlay: rgba(5, 15, 30, 0.45);
+    --modal-panel: #ffffff;
+    --modal-item-bg: #ffffff;
+    --modal-item-title: #3b4f70;
+    --modal-item-text: #13233d;
+    --modal-close-bg: #e3ecfa;
+    --modal-close-bg-hover: #cddcf3;
+    --modal-close-text: #173153;
+    --mobile-modal-sheet-start: rgba(247, 250, 255, 0.96);
+    --mobile-modal-sheet-mid: rgba(247, 250, 255, 0.86);
+    --mobile-modal-sheet-end: rgba(247, 250, 255, 0);
+    --mobile-modal-item-bg: rgba(255, 255, 255, 0.76);
+    --mobile-modal-item-border: rgba(19, 45, 80, 0.18);
+    --footer-bg: linear-gradient(145deg, #edf3ff, #dde8fa);
+    --footer-text: #1a3256;
+    --footer-subtext: #4b668a;
+    --footer-link: #214974;
+    --footer-border: rgba(17, 45, 84, 0.14);
+    --font-body: "Manrope", "Segoe UI", sans-serif;
+    --font-display: "Sora", "Manrope", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: var(--font-body);
@@ -437,7 +476,7 @@ textarea {
 .card-buttons .button {
     flex: 1;
     margin: 0;
-border: 0;
+    border: 0;
     border-radius: 10px;
     color: #fff;
     padding: 10px;
@@ -532,9 +571,9 @@ border: 0;
     inset: 0;
     display: flex;
     justify-content: center;
-align-items: center;
+    align-items: center;
     padding: 20px;
-background: var(--modal-overlay);
+    background: var(--modal-overlay);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -1190,5 +1229,5 @@ body.page-loaded .hero {
     .theme-toggle {
         width: 34px;
         height: 30px;
-}
+    }
 }
