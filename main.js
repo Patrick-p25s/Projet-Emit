@@ -25,8 +25,8 @@ const modalFields = {
 const members = [
     {
         id: 1,
-        nom: "RAVONIMANANTSOA",
-        prenom: "Anjara Sarobidy",
+        nom: "RASOANIRINA",
+        prenom: "Fetra Sarobidy",
         description:
             "Developpeur full-stack passionne de science des donnees et de solutions utiles.",
         github: "https://github.com/Patrick-p25s",
@@ -34,8 +34,8 @@ const members = [
         email: "sarobidy@gmail.com",
         age: "20",
         langage: "PHP, Javascript, Python",
-        image: "Maryah/maryah.jpeg",
-        html: "Maryah/maryah.html",
+        image: "Patrick/fleuria.png",
+        html: "personallePage/patrick.html",
     },
     {
         id: 2,
@@ -77,7 +77,7 @@ const members = [
         age: "19",
         langage: "PHP, MySQL, Javascript",
         image: "Patrick/carene.png",
-        html: "carene/carene.html",
+        html: "Eliacarene/Carene.html",
     },
     {
         id: 5,
@@ -95,8 +95,8 @@ const members = [
     },
     {
         id: 6,
-        nom: "ANDRIANARINTSOA",
-        prenom: "Mamilalaina Fleuria",
+        nom: "MAMILALAINA",
+        prenom: "Fleuria",
         description:
             "Je prefere les interfaces propres, lisibles et faciles a utiliser sur mobile.",
         github: "https://github.com/fleuria",
@@ -104,7 +104,7 @@ const members = [
         email: "fleuria.12@gmail.com",
         age: "18",
         langage: "CSS, Javascript, UI",
-        image: "Patrick/fleuria.png",
+        image: "Fleuria/fleuriaManjakely.jpg",
         html: "Fleuria/fleuria.html",
     },
     {
