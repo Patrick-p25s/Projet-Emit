@@ -91,7 +91,7 @@ const members = [
         age: "18",
         langage: "Node.js, PHP, SQL",
         image: "Patrick/voary.png",
-        html: "Voary/Voary.html",
+        html: "Voary/voary.html",
     },
     {
         id: 6,
