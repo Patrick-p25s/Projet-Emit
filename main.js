@@ -119,7 +119,7 @@ const members = [
         age: "19",
         langage: "Python, Javascript, API",
         image: "Patrick/stephan.png",
-        html: "Stephan/Stephan.html",
+        html: "Stephan/cv.html",
     },
     {
         id: 8,
