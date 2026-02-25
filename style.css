@@ -629,6 +629,7 @@ textarea {
 
 .modal-item.modal-animated-item {
     padding: 12px;
+    /* margin-top: 10px; */
     border: 1px solid transparent;
     background:
         linear-gradient(var(--modal-item-bg), var(--modal-item-bg)) padding-box,
